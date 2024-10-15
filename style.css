@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik",
+    sans-serif;
+}
+
+.container__principalHeader {
+  width: 100vw;
+  height: 8vh;
+  background-color: #1e3f72;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container__contentHeader {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+}
+
+.headerSearch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vh;
+}
+
+.inputHeader {
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  height: 2vh;
+  width: 20vw;
+  font-size: 1.7vh;
+}
+
+.buttonSearch {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 11vw;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.buttonSearch:hover {
+  cursor: pointer;
+  background-color: #4d6c9b;
+}
+
+.buttonAdd {
+  width: 20 vm;
+  padding: 0.4rem;
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonAdd:hover {
+  cursor: pointer;
+  background-color: #4d6c9b;
+}
