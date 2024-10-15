@@ -1,9 +1,13 @@
+/*======Generales=====*/
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Rubik",
     sans-serif;
 }
+
+/*======Header=====*/
 
 .container__principalHeader {
   width: 100vw;
@@ -72,3 +76,17 @@
   cursor: pointer;
   background-color: #4d6c9b;
 }
+
+/* ====Main==== */
+.container_view {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+}
+
+.listAside{
+  height:100%;
+  background-color: #D2B48C;
+  
+}
+
+/* ====Store==== */
