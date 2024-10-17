@@ -1,5 +1,7 @@
 <div align="center">
-# Proyecto: DesSoftIntegradorJS
+
+# Integrador FrontEnd
+
 </div>
 
 # Presentación
