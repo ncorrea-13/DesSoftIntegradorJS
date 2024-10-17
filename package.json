@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.8"
+    "vite": "^5.4.9"
   },
   "dependencies": {
-    "dessoft-integrador-front": "file:"
+    "dessoft-integrador-front": "file:",
+    "sweetalert2": "^11.14.3"
   }
 }

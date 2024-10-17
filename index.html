@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Integrador Front</title>
   <link rel="stylesheet" href="./style.css">
@@ -26,13 +26,14 @@
     <div class="container__principalHeader">
       <div class="container__contentHeader">
         <div class="headerSearch">
-          <input class="inputHeader" type="text" placeholder="Ingrese un elemento">
-          <button class="buttonSearch">Buscar<span class="material-symbols-outlined">search
+          <input class="inputHeader" id="inputHeader" type="text" placeholder="Búsqueda por nombre">
+          <button class="buttonSearch" id="buttonSearch">Buscar<span class="material-symbols-outlined">search
             </span>
           </button>
         </div>
+
         <div>
-          <button class="buttonAdd">Agregar Elemento
+          <button id="buttonAddElement" class="header_buttonAddElement">Agregar Elemento
             <span class="material-symbols-outlined">
               library_add
             </span>
@@ -45,17 +46,47 @@
   <!-- Main -->
   <main>
     <div class="container_view">
-      <div class="listAside">
-        <h2>Categorias</h2>
-        <span class="material-symbols-outlined">
-          filter_list
-        </span>
+      <aside class="listAside">
+        <p><br></p>
+        <h2>Categorias<span class="material-symbols-outlined">
+            filter_list
+          </span></h2>
         <ul id="listFilter">
-
         </ul>
-      </div>
-      <div class="store">
+      </aside>
 
+      <!-- Store (js) -->
+      <div class="store" id="storeContainer">
+      </div>
+    </div>
+
+    <!-- Popup -->
+
+    <div class="popUpContainer_principal" id="modalPopUp">
+      <div class="popUpContainer">
+        <div class="containerTitlePopUp">
+          <h1>Agregar o modificar un producto</h1>
+        </div>
+        <div class="containerInputs_popUp">
+          <input placeholder="Ingrese nombre" id="nombre" type="text" />
+          <input placeholder="Ingrese una imagen" id="img" type="text" />
+          <input placeholder="Precio" value="0" id="precio" type="number" />
+          <select id="categoria">
+            <option>Seleccione una categoria</option>
+            <option>Hamburguesas</option>
+            <option>Papas</option>
+            <option>Bebidas</option>
+          </select>
+
+        </div>
+        <div class="containerButtonsPopUp">
+          <button class="buttonPopUp cancel" id="cancelButton">
+            Cancelar </button>
+          <button class="buttonPopUp accept" id="acceptButton">
+            Aceptar </button>
+          <button class="buttonPopUp delete" id="deleteButton">
+            Eliminar </button>
+        </div>
       </div>
     </div>
   </main>
